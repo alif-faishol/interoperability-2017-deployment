@@ -1,0 +1,27 @@
+stages:
+  - deploy
+
+default:
+  image: ubuntu:18.04
+
+Deploy Production:
+  stage: deploy
+  environment:
+    name: staging
+  before_script:
+    - apt-get update -qq
+    - apt-get install -qq git
+    # Setup SSH deploy keys
+    - 'which ssh-agent || ( apt-get install -qq openssh-client )'
+    - eval $(ssh-agent -s)
+    - ssh-add <(echo "$SSH_PRIVATE_KEY_STG")
+    - mkdir -p ~/.ssh
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+  script:
+    - ssh root@45.32.123.185 "cd interoperability-2017-deployment
+      && git checkout master
+      && git pull https://${CI_DEPLOY_USER}:${CI_DEPLOY_PASSWORD}@gitlab.com/alifaishol/interoperability-2017-deployment.git master
+      && git submodule update
+      && docker-compose exec app bash -c 'cd alif && composer install && php artisan:migrate'"
+  only:
+    - master
