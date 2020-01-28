@@ -18,10 +18,6 @@ Deploy Production:
     - mkdir -p ~/.ssh
     - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
   script:
-    - ssh root@45.32.123.185 "cd interoperability-2017-deployment
-      && git checkout master
-      && git pull https://${CI_DEPLOY_USER}:${CI_DEPLOY_PASSWORD}@gitlab.com/alifaishol/interoperability-2017-deployment.git master
-      && git submodule update
-      && docker-compose exec app bash -c 'cd alif && composer install && php artisan:migrate'"
+    - ssh root@45.32.123.185 "cd interoperability-2017-deployment && chmod +x deploy.sh && ./deploy.sh"
   only:
     - master
