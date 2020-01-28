@@ -14,6 +14,7 @@ services:
     build: .
     restart: unless-stopped
     volumes:
+      - ./resources/default:/etc/nginx/sites-enabled/default
       - ./tedc-sw-interoperability-exam/src:/var/www/html/alif
       - ./UAS-PengelolaTurnamen:/var/www/html/eep
     ports:
