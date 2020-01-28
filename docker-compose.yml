@@ -15,6 +15,7 @@ services:
     restart: unless-stopped
     volumes:
       - ./tedc-sw-interoperability-exam/src:/var/www/html/alif
+      - ./UAS-PengelolaTurnamen:/var/www/html/eep
     ports:
       - "80:80"
     depends_on:
