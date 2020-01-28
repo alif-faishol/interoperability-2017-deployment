@@ -22,7 +22,6 @@ Deploy Production:
       && git checkout master
       && git pull https://${CI_DEPLOY_USER}:${CI_DEPLOY_PASSWORD}@gitlab.com/alifaishol/interoperability-2017-deployment.git master
       && git submodule update
-      && chmod +x deploy.sh
       && ./deploy.sh"
   only:
     - master
