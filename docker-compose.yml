@@ -16,6 +16,6 @@ services:
     volumes:
       - ./tedc-sw-interoperability-exam/src:/var/www/html/alif
     ports:
-      - "${PORT:-3008}:80"
+      - "80:80"
     depends_on:
       - db
