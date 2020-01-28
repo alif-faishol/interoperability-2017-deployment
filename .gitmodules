@@ -1,3 +1,6 @@
 [submodule "tedc-sw-interoperability-exam"]
 	path = tedc-sw-interoperability-exam
 	url = https://github.com/alif-faishol/tedc-sw-interoperability-exam.git
+[submodule "UAS-PengelolaTurnamen"]
+	path = UAS-PengelolaTurnamen
+	url = https://github.com/eeps12/UAS-PengelolaTurnamen.git
