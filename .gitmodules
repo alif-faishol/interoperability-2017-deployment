@@ -4,3 +4,6 @@
 [submodule "UAS-PengelolaTurnamen"]
 	path = UAS-PengelolaTurnamen
 	url = https://github.com/eeps12/UAS-PengelolaTurnamen.git
+[submodule "E-Voting-KPU"]
+	path = E-Voting-KPU
+	url = https://github.com/muzibmuzakar/E-Voting-KPU.git
