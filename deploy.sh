@@ -32,6 +32,16 @@ echo "DB_DATABASE=lumen_hotel" >> ./LumenHotel/.env
 echo "APP_URL=http://bella.2017a.site" >> ./LumenHotel/.env
 docker-compose exec -T app bash -c "cd bella && composer install && php artisan migrate && exit"
 
+cp .env.base ./LumenHotel-adam/.env
+echo "DB_DATABASE=lumen_hotel_adam" >> ./LumenHotel-adam/.env
+echo "APP_URL=http://adam.2017a.site" >> ./LumenHotel-adam/.env
+docker-compose exec -T app bash -c "cd adam && composer install && php artisan migrate && exit"
+
+cp .env.base ./LumenHotel-diky/.env
+echo "DB_DATABASE=lumen_hotel_diky" >> ./LumenHotel-diky/.env
+echo "APP_URL=http://diky.2017a.site" >> ./LumenHotel-diky/.env
+docker-compose exec -T app bash -c "cd diky && composer install && php artisan migrate && exit"
+
 cp .env.base ./gamestore/.env
 echo "DB_DATABASE=db_gamestore" >> ./gamestore/.env
 echo "APP_URL=http://idham.2017a.site" >> ./gamestore/.env

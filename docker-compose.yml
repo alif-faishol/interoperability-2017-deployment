@@ -21,6 +21,8 @@ services:
       - ./UAS_Booking:/var/www/html/fajar
       - ./UAS-API_TEDC:/var/www/html/yusuf
       - ./LumenHotel:/var/www/html/bella
+      - ./LumenHotel-adam:/var/www/html/adam
+      - ./LumenHotel-diky:/var/www/html/diky
       - ./gamestore:/var/www/html/idham
     ports:
       - "80:80"

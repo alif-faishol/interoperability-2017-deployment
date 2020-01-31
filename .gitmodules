@@ -19,3 +19,9 @@
 [submodule "gamestore"]
 	path = gamestore
 	url = https://github.com/idham695/gamestore.git
+[submodule "LumenHotel-diky"]
+	path = LumenHotel-diky
+	url = https://github.com/rabellaazzahra/LumenHotel.git
+[submodule "LumenHotel-adam"]
+	path = LumenHotel-adam
+	url = https://github.com/rabellaazzahra/LumenHotel.git
