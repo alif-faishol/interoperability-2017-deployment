@@ -27,4 +27,14 @@ echo "DB_DATABASE=media_bacaan" >> ./UAS-API_TEDC/.env
 echo "APP_URL=http://yusuf.2017a.site" >> ./UAS-API_TEDC/.env
 docker-compose exec -T app bash -c "cd yusuf && composer install && php artisan migrate && exit"
 
+cp .env.base ./LumenHotel/.env
+echo "DB_DATABASE=lumen_hotel" >> ./LumenHotel/.env
+echo "APP_URL=http://bella.2017a.site" >> ./LumenHotel/.env
+docker-compose exec -T app bash -c "cd bella && composer install && php artisan migrate && exit"
+
+cp .env.base ./gamestore/.env
+echo "DB_DATABASE=db_gamestore" >> ./gamestore/.env
+echo "APP_URL=http://idham.2017a.site" >> ./gamestore/.env
+docker-compose exec -T app bash -c "cd idham && composer install && php artisan migrate && exit"
+
 exit 0

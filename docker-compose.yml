@@ -20,6 +20,8 @@ services:
       - ./E-Voting-KPU:/var/www/html/muzib
       - ./UAS_Booking:/var/www/html/fajar
       - ./UAS-API_TEDC:/var/www/html/yusuf
+      - ./LumenHotel:/var/www/html/bella
+      - ./gamestore:/var/www/html/idham
     ports:
       - "80:80"
     depends_on:

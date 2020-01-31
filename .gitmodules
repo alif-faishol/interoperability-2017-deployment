@@ -13,3 +13,9 @@
 [submodule "UAS-API_TEDC"]
 	path = UAS-API_TEDC
 	url = https://github.com/Yusuf-Sahidin/UAS-API_TEDC.git
+[submodule "LumenHotel"]
+	path = LumenHotel
+	url = https://github.com/rabellaazzahra/LumenHotel.git
+[submodule "gamestore"]
+	path = gamestore
+	url = https://github.com/idham695/gamestore.git
