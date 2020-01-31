@@ -18,6 +18,7 @@ services:
       - ./tedc-sw-interoperability-exam/src:/var/www/html/alif
       - ./UAS-PengelolaTurnamen:/var/www/html/eep
       - ./E-Voting-KPU:/var/www/html/muzib
+      - ./UAS_Booking:/var/www/html/fajar
     ports:
       - "80:80"
     depends_on:

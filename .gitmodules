@@ -7,3 +7,6 @@
 [submodule "E-Voting-KPU"]
 	path = E-Voting-KPU
 	url = https://github.com/muzibmuzakar/E-Voting-KPU.git
+[submodule "UAS_Booking"]
+	path = UAS_Booking
+	url = https://github.com/jarzhyakuya/UAS_Booking.git
