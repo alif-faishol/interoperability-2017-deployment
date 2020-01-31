@@ -25,3 +25,6 @@
 [submodule "LumenHotel-adam"]
 	path = LumenHotel-adam
 	url = https://github.com/rabellaazzahra/LumenHotel.git
+[submodule "LumenBookStore"]
+	path = LumenBookStore
+	url = https://github.com/nashrul48/LumenBookStore.git

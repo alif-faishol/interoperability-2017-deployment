@@ -24,6 +24,7 @@ services:
       - ./LumenHotel-adam:/var/www/html/adam
       - ./LumenHotel-diky:/var/www/html/diky
       - ./gamestore:/var/www/html/idham
+      - ./LumenBookStore:/var/www/html/nashrul
     ports:
       - "80:80"
     depends_on:

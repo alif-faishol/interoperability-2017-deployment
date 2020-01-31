@@ -47,4 +47,9 @@ echo "DB_DATABASE=db_gamestore" >> ./gamestore/.env
 echo "APP_URL=http://idham.2017a.site" >> ./gamestore/.env
 docker-compose exec -T app bash -c "cd idham && composer install && php artisan migrate && exit"
 
+cp .env.base ./LumenBookStore/.env
+echo "DB_DATABASE=lumen_bookstore" >> ./LumenBookStore/.env
+echo "APP_URL=http://nashrul.2017a.site" >> ./LumenBookStore/.env
+docker-compose exec -T app bash -c "cd nashrul && composer install && php artisan migrate && exit"
+
 exit 0
