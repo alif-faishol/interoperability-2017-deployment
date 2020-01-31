@@ -22,4 +22,9 @@ echo "DB_DATABASE=booking_restoran" >> ./UAS_Booking/.env
 echo "APP_URL=http://fajar.2017a.site" >> ./UAS_Booking/.env
 docker-compose exec -T app bash -c "cd fajar && composer install && php artisan migrate && exit"
 
+cp .env.base ./UAS-API_TEDC/.env
+echo "DB_DATABASE=media_bacaan" >> ./UAS-API_TEDC/.env
+echo "APP_URL=http://yusuf.2017a.site" >> ./UAS-API_TEDC/.env
+docker-compose exec -T app bash -c "cd yusuf && composer install && php artisan migrate && exit"
+
 exit 0

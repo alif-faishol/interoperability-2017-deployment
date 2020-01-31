@@ -10,3 +10,6 @@
 [submodule "UAS_Booking"]
 	path = UAS_Booking
 	url = https://github.com/jarzhyakuya/UAS_Booking.git
+[submodule "UAS-API_TEDC"]
+	path = UAS-API_TEDC
+	url = https://github.com/Yusuf-Sahidin/UAS-API_TEDC.git
