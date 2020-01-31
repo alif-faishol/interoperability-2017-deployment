@@ -46,7 +46,7 @@ server {
         index index.php index.html index.htm;
 
         # Make site accessible from http://localhost/
-        server_name eep.2017a.site;
+        server_name eep.2017a.site asep.2017a.site gaby.2017a.site;
 
         location / {
 	        try_files $uri $uri/ /index.php?$query_string;
