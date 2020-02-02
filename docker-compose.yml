@@ -16,6 +16,7 @@ services:
     volumes:
       - ./resources/default:/etc/nginx/sites-enabled/default
       - ./resources/php7.2-fpm.service:/lib/systemd/system/php7.2-fpm.service
+      - ./resources/php7.2-fpm:/etc/init.d/php7.2-fpm
       - ./resources/www.conf:/etc/php/7.2/fpm/pool.d/www.conf
       - ./tedc-sw-interoperability-exam/src:/var/www/html/alif
       - ./UAS-PengelolaTurnamen:/var/www/html/eep
